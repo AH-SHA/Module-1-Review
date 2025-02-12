@@ -7,97 +7,121 @@ namespace Module_1_Review_Exercise___C_
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please type the name of 1 shape whose area you want to caculate: circle, triangle, rectangle, or square.");
+
+            string userInput = Console.ReadLine();
+
+
+            if (userInput == "circle")
+
+
             // AREA of a CIRCLE
 
-            Console.WriteLine("AREA of a CIRCLE:");
-            Console.WriteLine();
+            {
+                Console.WriteLine();
+                Console.WriteLine("AREA of a CIRCLE:");
+                Console.WriteLine();
 
-            // Code to ask the user to provide input
+                // Code to ask the user to provide input
 
-            Console.WriteLine("Please type a number on the next line for the circle's radius: ");
+                Console.WriteLine("Please type a number on the next line for the circle's radius: ");
 
-            //Create a variable called 'radius'
-            //Converting user input to the 'double' variable type
+                //Create a variable called 'radius'
+                //Converting user input to the 'double' variable type
 
-            double radius = double.Parse(Console.ReadLine());
+                double radius = double.Parse(Console.ReadLine());
 
-            //Calling the method 'CircleArea' and printing the method's result to the console
+                //Calling the method 'CircleArea' and printing the method's result to the console
 
-            Console.WriteLine($"The area of your circle is: {CircleArea(radius)}");
-
-            Console.WriteLine();
-            Console.WriteLine();
+                Console.WriteLine($"The area of your circle is: {CircleArea(radius)}");
 
 
+            }
+
+            else if (userInput == "triangle")
 
             // AREA of a TRIANGLE
 
-            Console.WriteLine("AREA of a TRIANGLE:");
+            {
+                Console.WriteLine();
+                Console.WriteLine("AREA of a TRIANGLE:");
 
-            Console.WriteLine();
+                Console.WriteLine();
 
-            Console.WriteLine("Enter a number on the next line for the triangle's BASE: ");
-
-
-            double baseLength = double.Parse(Console.ReadLine());
-
-
-            Console.WriteLine("Enter a number on the next line for the triangle's HEIGHT: ");
+                Console.WriteLine("Enter a number on the next line for the triangle's BASE: ");
 
 
-            double height = double.Parse(Console.ReadLine());
+                double baseLength = double.Parse(Console.ReadLine());
 
 
-            Console.WriteLine($"The area of your triangle is: {TriangleArea(baseLength, height)}");
+                Console.WriteLine("Enter a number on the next line for the triangle's HEIGHT: ");
 
-            Console.WriteLine();
-            Console.WriteLine();
+
+                double height = double.Parse(Console.ReadLine());
+
+
+                Console.WriteLine($"The area of your triangle is: {TriangleArea(baseLength, height)}");
+
+
+            }
+
+            else if (userInput == "rectangle")
 
             //AREA of a RECTANGLE
 
+            {
+                Console.WriteLine();
+                Console.WriteLine("AREA of a RECTANGLE:");
 
-            Console.WriteLine("AREA of a RECTANGLE:");
+                Console.WriteLine();
 
-            Console.WriteLine();
-
-            Console.WriteLine("Enter a number on the next line for the rectangle's LENGTH: ");
-
-
-            double length = double.Parse(Console.ReadLine());
+                Console.WriteLine("Enter a number on the next line for the rectangle's LENGTH: ");
 
 
-            Console.WriteLine("Enter a number on the next line for the rectangle's WIDTH: ");
+                double length = double.Parse(Console.ReadLine());
 
 
-            double width = double.Parse(Console.ReadLine());
+                Console.WriteLine("Enter a number on the next line for the rectangle's WIDTH: ");
 
 
-            Console.WriteLine($"The area of your rectangle is: {RectangleArea(length, width)}");
+                double width = double.Parse(Console.ReadLine());
 
-            Console.WriteLine();
-            Console.WriteLine();
 
+                Console.WriteLine($"The area of your rectangle is: {RectangleArea(length, width)}");
+
+                
+            }
+
+            else if (userInput == "square")
 
             // AREA of a SQUARE
-            Console.WriteLine("AREA of a SQUARE:");
-            Console.WriteLine();
 
-            // Code to ask the user to provide input
+            {
+                Console.WriteLine();
+                Console.WriteLine("AREA of a SQUARE:");
+                Console.WriteLine();
 
-            Console.WriteLine("Please type a number on the next line for the square's side: ");
+                // Code to ask the user to provide input
 
-            //Create a variable called 'side'
-            //Converting user input to the 'double' variable type
+                Console.WriteLine("Please type a number on the next line for the square's side: ");
 
-            double side = double.Parse(Console.ReadLine());
+                //Create a variable called 'side'
+                //Converting user input to the 'double' variable type
 
-            //Calling the method 'SquareArea' and printing the method's result to the console
+                double side = double.Parse(Console.ReadLine());
 
-            Console.WriteLine($"The area of your circle is: {SquareArea(side)}");
+                //Calling the method 'SquareArea' and printing the method's result to the console
 
-            Console.WriteLine();
-            Console.WriteLine();
+                Console.WriteLine($"The area of your circle is: {SquareArea(side)}");
 
+                
+            }
+
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("START OVER and re-enter the shape's name in the correct format.");
+            }
 
         }
         // All Methods were placed in the Class of the Project
