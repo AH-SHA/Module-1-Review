@@ -1,4 +1,6 @@
-﻿namespace Module_1_Review_Exercise___C_
+﻿using System.Security.Principal;
+
+namespace Module_1_Review_Exercise___C_
 {
     
     internal class Program
@@ -7,7 +9,7 @@
         {
             // AREA of a CIRCLE
 
-            Console.WriteLine("AREA of a CIRCLE");
+            Console.WriteLine("AREA of a CIRCLE:");
             Console.WriteLine();
 
             // Code to ask the user to provide input
@@ -24,13 +26,13 @@
             Console.WriteLine($"The area of your circle is: {CircleArea(radius)}");
 
             Console.WriteLine();
+            Console.WriteLine();
 
 
 
+            // AREA of a TRIANGLE
 
-          // AREA of a TRIANGLE
-
-            Console.WriteLine("AREA of a TRIANGLE");
+            Console.WriteLine("AREA of a TRIANGLE:");
 
             Console.WriteLine();
 
@@ -49,12 +51,12 @@
             Console.WriteLine($"The area of your triangle is: {TriangleArea(baseLength, height)}");
 
             Console.WriteLine();
-
+            Console.WriteLine();
 
             //AREA of a RECTANGLE
 
 
-            Console.WriteLine("AREA of a RECTANGLE");
+            Console.WriteLine("AREA of a RECTANGLE:");
 
             Console.WriteLine();
 
@@ -73,19 +75,28 @@
             Console.WriteLine($"The area of your rectangle is: {RectangleArea(length, width)}");
 
             Console.WriteLine();
-
-
-
-
             Console.WriteLine();
+
 
             // AREA of a SQUARE
-            Console.WriteLine("AREA of a SQUARE");
-            Console.WriteLine();
-            
-            
+            Console.WriteLine("AREA of a SQUARE:");
             Console.WriteLine();
 
+            // Code to ask the user to provide input
+
+            Console.WriteLine("Please type a number on the next line for the square's side: ");
+
+            //Create a variable called 'side'
+            //Converting user input to the 'double' variable type
+
+            double side = double.Parse(Console.ReadLine());
+
+            //Calling the method 'SquareArea' and printing the method's result to the console
+
+            Console.WriteLine($"The area of your circle is: {SquareArea(side)}");
+
+            Console.WriteLine();
+            Console.WriteLine();
 
 
         }
@@ -123,6 +134,14 @@
 
         }
 
+        static double SquareArea(double side)
+        {
+            //Codeblock for the SquareArea method to calculate area
+            //SquareArea method uses 1 parameter: side
+
+            return Math.Pow(side, 2);
+
+        }
 
     }
 
