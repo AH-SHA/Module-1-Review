@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Module 1 Review Exercise - C#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f876a500fcd2ade04dd308b228286300ae5032d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4747f6daaed5fcb7082bc2904fb84e139f420cea")]
 [assembly: System.Reflection.AssemblyProductAttribute("Module 1 Review Exercise - C#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Module 1 Review Exercise - C#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

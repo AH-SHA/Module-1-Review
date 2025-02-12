@@ -32,6 +32,8 @@
 
             Console.WriteLine("AREA of a TRIANGLE");
 
+            Console.WriteLine();
+
             Console.WriteLine("Enter a number on the next line for the triangle's BASE: ");
 
 
@@ -52,9 +54,25 @@
             //AREA of a RECTANGLE
 
 
-
             Console.WriteLine("AREA of a RECTANGLE");
 
+            Console.WriteLine();
+
+            Console.WriteLine("Enter a number on the next line for the rectangle's LENGTH: ");
+
+
+            double length = double.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Enter a number on the next line for the rectangle's WIDTH: ");
+
+
+            double width = double.Parse(Console.ReadLine());
+
+
+            Console.WriteLine($"The area of your rectangle is: {RectangleArea(length, width)}");
+
+            Console.WriteLine();
 
 
 
@@ -63,15 +81,15 @@
 
             // AREA of a SQUARE
             Console.WriteLine("AREA of a SQUARE");
-
-
             Console.WriteLine();
+            
+            
             Console.WriteLine();
 
 
 
         }
-
+        // All Methods were placed in the Class of the Project
         // Creating the method 'CircleArea' within the class of the project
         static double CircleArea(double radius)
 
@@ -91,6 +109,17 @@
             //TriangleArea method uses 2 parameters: baseLength and height
 
             return (baseLength / 2) * height;
+
+        }
+
+        //Creating the method 'RectangleArea' within the class of the project
+
+        static double RectangleArea(double length, double width)
+        {
+            //Codeblock for the RectangleArea method to calculate area
+            //RectangleArea method uses 2 parameters: length and width
+
+            return length * width;
 
         }
 
